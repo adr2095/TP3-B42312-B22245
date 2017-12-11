@@ -5,9 +5,11 @@ import java.util.ArrayList;
 
 public abstract class Query {
     protected Connection connection; //Conexión con BD
+    protected boolean regularMode;
 
     public Query() {
         this.connection = new Connection();
+        regularMode = true;
     }
 
     /**
@@ -22,12 +24,14 @@ public abstract class Query {
      * @param tablaPrueba Tuplas resultantes.
      */
     protected void printResults(ArrayList<TablaPrueba> tablaPrueba, String key) {
-        if(tablaPrueba.size() > 0) {
-            System.out.println("\nResultados:\n");
-            print(tablaPrueba);
-            System.out.println();
-        } else {
-            System.out.println("No hay resultados para " + key + ".");
+        if(regularMode) {
+            if (tablaPrueba.size() > 0) {
+                System.out.println("\nResultados:\n");
+                print(tablaPrueba);
+                System.out.println();
+            } else {
+                System.out.println("No hay resultados para " + key + ".");
+            }
         }
     }
 
@@ -68,5 +72,9 @@ public abstract class Query {
         }
 
         return tablaPrueba;
+    }
+
+    public void setMode(boolean mode){
+        this.regularMode = mode;
     }
 }

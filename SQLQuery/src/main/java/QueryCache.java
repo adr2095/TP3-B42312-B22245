@@ -1,14 +1,25 @@
 import java.util.ArrayList;
 import cr.ac.ucr.ecci.ci1310.cache.CacheMemory;
+import cr.ac.ucr.ecci.ci1310.cache.algorithm.FirstInFirstOut;
 import cr.ac.ucr.ecci.ci1310.cache.algorithm.LastInFirstOut;
+import cr.ac.ucr.ecci.ci1310.cache.algorithm.LeastRecentlyUsed;
 
 public class QueryCache extends Query {
     private CacheMemory cacheID;
     private CacheMemory cacheText;
 
-    public QueryCache() {
-        this.cacheID = new LastInFirstOut();
-        this.cacheText = new LastInFirstOut();
+    public QueryCache(String name, int type, boolean mode) {
+        this.regularMode = mode;
+        if(type == 1) {
+            this.cacheID = new LastInFirstOut(10, name);
+            this.cacheText = new LastInFirstOut(10, name);
+        } else if (type == 2){
+            this.cacheID = new FirstInFirstOut(10, name);
+            this.cacheText = new FirstInFirstOut(10, name);
+        } else {
+            this.cacheID = new LeastRecentlyUsed(10, name);
+            this.cacheText = new LeastRecentlyUsed(10, name);
+        }
     }
 
     protected void run(String searchType, String key) {
@@ -29,7 +40,7 @@ public class QueryCache extends Query {
             } else {
                 printResults(tablaPruebas, key);
             }
-        } else if (searchType.compareTo("txt") == 0) { //Busqueda por texto
+        } else { //Busqueda por texto
             tablaPruebas = (ArrayList<TablaPrueba>) cacheText.get(key);
 
             if (tablaPruebas == null) {
@@ -43,8 +54,6 @@ public class QueryCache extends Query {
             } else {
                 printResults(tablaPruebas, key);
             }
-        } else {
-            System.out.println("Búsqueda inválida. Ingrese 'id' o 'txt'.");
         }
     }
 }
