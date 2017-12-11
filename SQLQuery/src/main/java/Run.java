@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Run {
@@ -7,9 +8,9 @@ public class Run {
     }
 
     private void options() {
-        System.out.println("¡Bienvenido!");
+        System.out.println("¡Bienvenido!\n");
         Scanner sc = new Scanner(System.in);
-        int keepGoing = 1;
+        char keepGoing = 'y';
         int version;
         String type;
         String key;
@@ -18,23 +19,28 @@ public class Run {
         System.out.print("Ingrese versión a utilizar: \n" +
                 "[1] Caché\n"+
                 "[2] Sin caché\n" +
-                "Cualquier otro valor definira Caché por dafault: ");
+                "Cualquier otro número definirá Caché por dafault: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Valor ingresado inválido. Ingrese un número: ");
+            sc.next(); // this is important!
+        }
         version = sc.nextInt();
+        System.out.println();
 
-        while (keepGoing == 1) {
+        if(version == 2) {
+            query = new QueryNoCache();
+        }
+
+        while (keepGoing == 'y') {
             System.out.print("Ingrese el tipo de búsqueda (id o txt): ");
             type = sc.next();
             System.out.print("Ingrese el valor a buscar: ");
             key = sc.next();
-
-
-            if(version == 2) {
-                query = new QueryNoCache();
-            }
             query.run(type, key);
 
-            System.out.println("¿Desea hacer otra busqueda? 1 para continuar, otro número para salir.");
-            keepGoing = sc.nextInt();
+            System.out.print("¿Desea hacer otra busqueda? (Y/N): ");
+            keepGoing = sc.next().toLowerCase().charAt(0);
+            System.out.println();
         }
     }
 }

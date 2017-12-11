@@ -25,6 +25,7 @@ public abstract class Query {
         if(tablaPrueba.size() > 0) {
             System.out.println("\nResultados:\n");
             print(tablaPrueba);
+            System.out.println();
         } else {
             System.out.println("No hay resultados para " + key + ".");
         }

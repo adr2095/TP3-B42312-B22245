@@ -11,7 +11,7 @@ public class QueryNoCache extends Query {
         } else if (searchType.compareTo("txt") == 0) { //Busqueda por texto
             query = "Select * from TablaPrueba where Descripcion like '%" + key + "%'";
         } else {
-            System.out.println("Ingrese tipo de búsqueda: id o txt.");
+            System.out.println("Búsqueda inválida. Ingrese 'id' o 'txt'.");
             correct = false;
         }
 
