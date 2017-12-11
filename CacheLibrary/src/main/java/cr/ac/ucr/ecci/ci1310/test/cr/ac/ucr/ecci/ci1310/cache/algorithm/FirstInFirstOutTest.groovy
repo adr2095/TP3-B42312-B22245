@@ -1,4 +1,4 @@
-import cr.ac.ucr.ecci.ci1310.cache.algorithm.FirstInFirstOut
+package cr.ac.ucr.ecci.ci1310.cache.algorithm
 
 class FirstInFirstOutTest extends GroovyTestCase {
 
