@@ -15,12 +15,13 @@ public abstract class CacheMemory <K,V> implements Cache <K,V>{
         this.elementList = new LinkedList<CacheEntry>();
     }
 
-    public CacheMemory(int size) {
+    public CacheMemory(int size, String name) {
         this.size = size;
         this.numElem = 0;
         int mapCapacity = (int) Math.ceil((size+1)/0.75);
         this.elementTable = new HashMap<K,LinkedNode<CacheEntry>>(mapCapacity);
         this.elementList = new LinkedList<CacheEntry>();
+        this.name = name;
     }
 
     public String getName(){

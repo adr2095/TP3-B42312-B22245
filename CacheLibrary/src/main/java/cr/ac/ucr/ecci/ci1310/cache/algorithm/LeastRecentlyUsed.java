@@ -12,8 +12,8 @@ public class LeastRecentlyUsed<K,V> extends CacheMemory<K,V> {
         super();
     }
 
-    public LeastRecentlyUsed(int size) {
-        super(size);
+    public LeastRecentlyUsed(int size, String name) {
+        super(size, name);
     }
 
     public LinkedNode<CacheEntry> Lookup(K key) {

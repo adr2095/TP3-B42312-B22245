@@ -3,8 +3,8 @@ import cr.ac.ucr.ecci.ci1310.util.MyLinkedList.*;
 import cr.ac.ucr.ecci.ci1310.cache.CacheMemory;
 
 public class FirstInFirstOut <K,V> extends CacheMemory <K,V> {
-    public FirstInFirstOut(int size) {
-        super(size);
+    public FirstInFirstOut(int size, String name) {
+        super(size, name);
     }
 
     public FirstInFirstOut() {

@@ -8,8 +8,8 @@ public class LastInFirstOut<K,V> extends CacheMemory<K,V> {
         super();
     }
 
-    public LastInFirstOut(int size) {
-        super(size);
+    public LastInFirstOut(int size, String name) {
+        super(size, name);
     }
 
     /*protected LinkedNode<CacheEntry> Lookup(K key) {
