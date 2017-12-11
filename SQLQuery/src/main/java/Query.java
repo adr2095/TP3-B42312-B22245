@@ -1,4 +1,7 @@
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Iterator;
+import java.util.ArrayList;
 
 public abstract class Query {
     protected Connection connection; //Conexión con BD
@@ -15,180 +18,54 @@ public abstract class Query {
     protected abstract void run(String searchType, String key);
 
     /**
-     * Imprime resultado de las tuplas.
-     * @param result Tuplas resultantes.
-     * @return 1 si fue exitoso.
+     * Llama a impirmir resultado de las tuplas si la lista no esta vacía.
+     * @param tablaPrueba Tuplas resultantes.
      */
-    protected boolean printResults(ResultSet result) {
-        boolean success = false;
-
-        if(result != null) {
-            try {
-                while (result.next()) {
-                    System.out.println(result.getString(1) + " " + result.getString(2));
-                }
-                result.beforeFirst();
-                success = true;
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-                System.exit(1);
-            }
-        }
-
-        return success;
-    }
-
-    /*protected void printResults(LinkedList<Tuple> result, String key) {
-        if (result.size() > 0) {
-            System.out.println("Resultados:\n");
-            Iterator it = result.iterator();
-            Tuple tuple;
-            while (it.hasNext()) {
-                tuple = (Tuple) it.next();
-                System.out.println(tuple.getCodigo() + " " + tuple.getDescripcion());
-            }
+    protected void printResults(ArrayList<TablaPrueba> tablaPrueba, String key) {
+        if(tablaPrueba.size() > 0) {
+            System.out.println("\nResultados:\n");
+            print(tablaPrueba);
         } else {
             System.out.println("No hay resultados para " + key + ".");
         }
-    }*/
+    }
 
     /**
-     * Devuelve tuplas según query por parámetro.
-     * @param query Consulta sql.
-     * @return tuplas resultantes.
+     * Imprime resultado de las tuplas.
+     * @param tablaPrueba Tuplas resultantes.
+     * @return 1 si fue exitoso.
      */
-    protected ResultSet getTuples(String query) {
-        ResultSet resultSet = connection.execQuery(query); //Ejecuta consulta
+    protected void print(ArrayList<TablaPrueba> tablaPrueba) {
+        Iterator it = tablaPrueba.iterator();
+        TablaPrueba temp;
 
-        return resultSet;
+        while (it.hasNext()) {
+            temp = (TablaPrueba) it.next();
+            System.out.println(temp.getCodigo() + " " + temp.getDescripcion());
+        }
     }
 
-    /*protected LinkedList<Tuple> getTuples(String query) {
-        LinkedList<Tuple> tuples = new LinkedList<Tuple>();
+    /**
+     * Devuelve lista de tuplas según query por parámetro.
+     * @param query Consulta sql.
+     * @return lista de tuplas mapeadas objeto TablaPrueba.
+     */
+    protected ArrayList<TablaPrueba> getTuples(String query) {
         ResultSet resultSet = connection.execQuery(query); //Ejecuta consulta
+        ArrayList tablaPrueba = new ArrayList();
+        int codigo;
+        String descripcion;
 
-        if (resultSet != null) { //Si existen tuplas las guarda en lista y las devuelve.
-            try {
-                Tuple tuple;
-
-                while (resultSet.next()) {
-
-                    tuples.add(new Tuple(resultSet.getInt("Codigo"), resultSet.getString("Descripcion")));
-                }
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-                System.exit(1);
+        try {
+            while (resultSet.next()) {
+                codigo = Integer.parseInt(resultSet.getString(1));
+                descripcion = resultSet.getString(2);
+                tablaPrueba.add(new TablaPrueba(codigo,descripcion));
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
 
-        return tuples;
-    }*/
-}
-
-/*import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Iterator;
-import java.util.LinkedList;
-import cr.ac.ucr.ecci.ci1310.cache.CacheMemory;
-import cr.ac.ucr.ecci.ci1310.cache.algorithm.LastInFirstOut;
-
-public class Query {
-    Connection connection;
-    CacheMemory cacheID;
-    CacheMemory cacheText;
-    boolean needQuery;
-
-    public Query(String args[]) {
-        this.connection = new Connection();
-        this.cacheID = new LastInFirstOut();
-        this.cacheText = new LastInFirstOut();
-        this.needQuery = false;
-        this.run(args);
-    }
-
-
-private void run(String args[]) {
-    if(args.length == 2) { //Verifica que hayan 2 argumentos
-        //String cacheType = args[0].toLowerCase(); //define tipo de cache según tipo de búsqueda enviada por parámetro
-        //String key = args[1]; //guarda valor por el que se buscará
-        //LinkedList<ResultSet> result = new LinkedList<ResultSet>(); //Lista de valores a devolver.
-        //String query = ""; //Query para solicitud de datos que no están en caché.
-
-        if((cacheType).compareTo("id") == 0) { //Busqueda por ID
-            result = (LinkedList<ResultSet>)cacheID.get(key); //Guarda las tuplas resultantes si se encuentra en en caché
-
-            if (result == null) {//si no hay resultados construye el query.
-                query = "Select * from TablaPrueba where Codigo = '" + key + "'";
-                result = getTuples(query);
-                try {
-                    result.element().beforeFirst();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                if(result != null) {
-                    cacheID.put(key, result);
-                }
-            }
-        }
-        else if ((cacheType).compareTo("txt") == 0){ //Busqueda por texto
-            result = (LinkedList<ResultSet>)cacheText.get(key);
-
-            if (result == null) {
-                query = "Select * from TablaPrueba where Descripcion like '%" + key + "%'";
-                result = getTuples(query);
-
-                if(result != null) {
-                    cacheText.put(key, result);
-                }
-            }
-        } else {
-            System.out.println("Ingrese tipo de búsqueda: id o txt.");
-            System.exit(1);
-        }
-
-        //Imprime resultados si los hay.
-        if(result != null) {
-            Iterator it = result.iterator();
-
-            try {
-                ResultSet set = ((ResultSet) it.next());
-                set.beforeFirst();
-                System.out.println(set.getString(1));
-                while (it.hasNext()) {
-                    System.out.println(set.getString(1));
-                }
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-                System.exit(1);
-            }
-        } else {
-            System.out.println("No hay resultados para " + key + ".");
-        }
-    } else {
-        System.out.println("Ingrese tipo de búsqueda (id o txt) y valor a buscar.");
+        return tablaPrueba;
     }
 }
-
-
-    private LinkedList<ResultSet> getTuples(String query) {
-        LinkedList<ResultSet> tuples = new LinkedList<ResultSet>();
-        ResultSet resultSet = connection.execQuery(query); //Ejecuta consulta
-
-
-        if (resultSet != null) { //Si existen tuplas las guarda en lista y las devuelve.
-            try {
-
-                while (resultSet.next()) {
-                    tuples.add(resultSet);
-                }
-                resultSet.beforeFirst();
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-                System.exit(1);
-            }
-        }
-
-        return tuples;
-    }
-}*/
