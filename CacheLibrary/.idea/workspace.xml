@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6bfb2e21-b650-40bc-9081-4bf17d99596f" name="Default" comment="Bugfix Cache Memory, elementList no estaba inicializado">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LeastRecentlyUsed.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOutTest.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/LeastRecentlyUsedTest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SQLQuery/target/classes/QueryNoCache.class" afterPath="$PROJECT_DIR$/../SQLQuery/target/classes/QueryNoCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SQLQuery/target/classes/Run.class" afterPath="$PROJECT_DIR$/../SQLQuery/target/classes/Run.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="6bfb2e21-b650-40bc-9081-4bf17d99596f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TP3-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/TP3-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheMemory.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheMemory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOut.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOut.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOut.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOutTest.groovy" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOutTest.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SQLQuery/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../SQLQuery/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SQLQuery/SQLQuery.iml" afterPath="$PROJECT_DIR$/../SQLQuery/SQLQuery.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,42 +23,19 @@
       <FILTER>cr.ac.ucr.ecci.ci1310.cache.algorithm.*</FILTER>
     </SUITE>
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="LastInFirstOut.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOut.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-17">
-                    <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="CacheMemory.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheMemory.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="33">
-                    <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,11 +78,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOut.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOut.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOutTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheMemory.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOut.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LeastRecentlyUsed.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/LeastRecentlyUsedTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOutTest.groovy" />
       </list>
     </option>
   </component>
@@ -169,6 +140,56 @@
             <path>
               <item name="CacheLibrary" type="b2602c69:ProjectViewProjectNode" />
               <item name="CacheLibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CacheLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CacheLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CacheLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CacheLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CacheLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CacheLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CacheLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CacheLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ci1310" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CacheLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CacheLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ci1310" type="462c0819:PsiDirectoryNode" />
+              <item name="ci1310" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CacheLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CacheLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ci1310" type="462c0819:PsiDirectoryNode" />
+              <item name="ci1310" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CacheLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CacheLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -501,7 +522,7 @@
       <workItem from="1512916004194" duration="28954000" />
       <workItem from="1512981786412" duration="131000" />
       <workItem from="1512982297498" duration="1061000" />
-      <workItem from="1513015432653" duration="8398000" />
+      <workItem from="1513015432653" duration="8881000" />
     </task>
     <task id="LOCAL-00001" summary="Correcciones a la clase CacheMemory.&#10;&#10;Documentación de los métodos abstractos y definición de una clase CacheEntry&#10;para encapsular los datos guardados.">
       <created>1512920857184</created>
@@ -552,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512967620645</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="LRU y FIFO listos :)">
+      <created>1513023893046</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1513023893046</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -588,7 +616,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43960000" />
+    <option name="totallyTimeSpent" value="44443000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,8 +637,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5045386" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32763976" sideWeight="0.49546143" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.49546143" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -675,20 +703,21 @@
     <MESSAGE value="Groovy Unit Tests para LinkedList" />
     <MESSAGE value="Pruebas y bugfixes para Lista" />
     <MESSAGE value="Bugfix Cache Memory, elementList no estaba inicializado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugfix Cache Memory, elementList no estaba inicializado" />
+    <MESSAGE value="LRU y FIFO listos :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="LRU y FIFO listos :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOutTest.groovy</url>
-          <line>64</line>
+          <line>62</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOutTest.groovy</url>
-          <line>65</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -707,16 +736,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOutTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
@@ -990,22 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOutTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOutTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/groovy-all-2.4.6.jar!/org/codehaus/groovy/runtime/callsite/CallSiteArray.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1018,16 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheMemory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1104,6 +1097,40 @@
             <element signature="e#4412#4413#0" expanded="true" />
             <element signature="e#4476#4477#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheMemory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOutTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOutTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
