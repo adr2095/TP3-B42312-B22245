@@ -84,7 +84,11 @@ public abstract class CacheMemory <K,V> implements Cache <K,V>{
      * @return Retorna una referencia al LinkedNode que contiene los datos de la
      * llave solicitada, o bien null si no está cacheada.
      */
-    protected abstract LinkedNode<CacheEntry> Lookup(K key);
+    //protected abstract LinkedNode<CacheEntry> Lookup(K key);
+    public LinkedNode<CacheEntry> Lookup(K key) {
+        LinkedNode<CacheEntry> node = this.elementTable.get(key);
+        return node;
+    }
 
     /**
      * Añade una nueva entrada al caché.
@@ -95,7 +99,21 @@ public abstract class CacheMemory <K,V> implements Cache <K,V>{
      * @param value Los datos del nuevo elemento.
      * @return Una referencia al nuevo nodo creado.
      */
-    protected abstract LinkedNode<CacheEntry> Insert(K key, V value);
+    //protected abstract LinkedNode<CacheEntry> Insert(K key, V value);
+    public LinkedNode<CacheEntry> Insert(K key, V value) {
+
+        // Ver si el caché está lleno
+        if (this.numElem == this.size) {
+            this.SelectVictim();
+        }
+
+        CacheEntry entry = new CacheEntry(key, value);
+        this.elementList.addFirst(entry);
+        this.elementTable.put(key, this.elementList.getFirst());
+        this.numElem++;
+
+        return this.elementList.getFirst();
+    }
 
     /**
      * Sobreescribe los datos cacheados en un nodo.
@@ -105,7 +123,11 @@ public abstract class CacheMemory <K,V> implements Cache <K,V>{
      * @param value El nuevo valor de los datos.
      * @return Una referencia a node.
      */
-    protected abstract LinkedNode<CacheEntry> Set(LinkedNode<CacheEntry> node, V value);
+    //protected abstract LinkedNode<CacheEntry> Set(LinkedNode<CacheEntry> node, V value);
+     public LinkedNode<CacheEntry> Set(LinkedNode<CacheEntry> n, V value) {
+        n.getElement().value = value;
+        return n;
+    }
 
     /**
      * Selecciona el dato que se debe eliminar del caché según la
@@ -113,7 +135,15 @@ public abstract class CacheMemory <K,V> implements Cache <K,V>{
      * tabla hash y retorna una referencia al mismo.
      * @return El nodo eliminado.
      */
-    protected abstract LinkedNode<CacheEntry> SelectVictim();
+    //protected abstract LinkedNode<CacheEntry> SelectVictim();
+    protected LinkedNode<CacheEntry> SelectVictim()
+    {
+        LinkedNode<CacheEntry> deleted = elementList.RemoveLast();
+        K key = deleted.getElement().key;
+        this.elementTable.remove(key);
+        this.numElem--;
+        return deleted;
+    }
 
     /**
      * Elimina una entrada del caché.
@@ -121,8 +151,12 @@ public abstract class CacheMemory <K,V> implements Cache <K,V>{
      * tabla hash.
      * @param node El nodo a eliminar.
      */
-    protected abstract void Delete(LinkedNode<CacheEntry> node);
-
+    //protected abstract void Delete(LinkedNode<CacheEntry> node);
+    public void Delete(LinkedNode<CacheEntry> node) {
+        this.elementTable.remove(node.getElement().key);
+        this.elementList.Remove(node);
+        this.numElem--;
+    }
     /**
      * El máximo número de elementos que puede haber en el caché.
      */

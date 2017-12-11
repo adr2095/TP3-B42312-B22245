@@ -7,12 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c01a680f-b3cd-4827-b967-bfad8eb03096" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/QueryCache.class" afterPath="$PROJECT_DIR$/target/classes/QueryCache.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LeastRecentlyUsed.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/test/cr/ac/ucr/ecci/ci1310/cache/algorithm/LeastRecentlyUsedTest.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/QueryNoCache.class" afterPath="$PROJECT_DIR$/target/classes/QueryNoCache.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Run.class" afterPath="$PROJECT_DIR$/target/classes/Run.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CacheLibrary/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../CacheLibrary/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CacheLibrary/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../CacheLibrary/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheMemory.java" afterPath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheMemory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOut.java" afterPath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOut.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOut.java" afterPath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOut.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Query.java" afterPath="$PROJECT_DIR$/src/main/java/Query.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/QueryCache.java" afterPath="$PROJECT_DIR$/src/main/java/QueryCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/QueryNoCache.java" afterPath="$PROJECT_DIR$/src/main/java/QueryNoCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Run.java" afterPath="$PROJECT_DIR$/src/main/java/Run.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -216,10 +220,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="780" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -277,7 +282,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CacheLibrary" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
@@ -432,7 +437,7 @@
       <workItem from="1512959143940" duration="20153000" />
       <workItem from="1512982939953" duration="421000" />
       <workItem from="1512983851149" duration="69000" />
-      <workItem from="1513011628412" duration="3680000" />
+      <workItem from="1513011628412" duration="4398000" />
     </task>
     <task id="LOCAL-00001" summary="Objeto tupla. Correción de la profe.">
       <created>1513013460528</created>
@@ -441,14 +446,21 @@
       <option name="project" value="LOCAL" />
       <updated>1513013460528</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Cambios interfaz.">
+      <created>1513015325322</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513015325322</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30370000" />
+    <option name="totallyTimeSpent" value="31088000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1382" height="780" extended-state="0" />
+    <frame x="1358" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -488,7 +500,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Objeto tupla. Correción de la profe." />
-    <option name="LAST_COMMIT_MESSAGE" value="Objeto tupla. Correción de la profe." />
+    <MESSAGE value="Cambios interfaz." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios interfaz." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -604,7 +617,7 @@
         <state relative-caret-position="323">
           <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -682,7 +695,7 @@
         <state relative-caret-position="323">
           <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -744,7 +757,7 @@
         <state relative-caret-position="646">
           <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -764,7 +777,7 @@
         <state relative-caret-position="527">
           <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="35" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -803,7 +816,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -870,7 +883,7 @@
         <state relative-caret-position="86">
           <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>

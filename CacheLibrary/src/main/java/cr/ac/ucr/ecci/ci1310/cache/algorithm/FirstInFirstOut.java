@@ -3,27 +3,39 @@ import cr.ac.ucr.ecci.ci1310.util.MyLinkedList.*;
 import cr.ac.ucr.ecci.ci1310.cache.CacheMemory;
 
 public class FirstInFirstOut <K,V> extends CacheMemory <K,V> {
-    protected LinkedNode<CacheEntry> Lookup(K key) {
-        return null;
+    public FirstInFirstOut(int size) {
+        super(size);
     }
 
-    protected LinkedNode<CacheEntry> Insert(K key, V value) {
-        return null;
+    public FirstInFirstOut() {
+        super();
     }
 
-    protected LinkedNode<CacheEntry> Set(LinkedNode<CacheEntry> n, V value) {
+    /*protected LinkedNode<CacheEntry> Lookup(K key) {
+        LinkedNode<CacheEntry> node = this.elementTable.get(key);
+        return node;
+    }*/
+
+    /*protected LinkedNode<CacheEntry> Insert(K key, V value) {
         return null;
-    }
+    }*/
 
+    /*protected LinkedNode<CacheEntry Set(LinkedNode<CacheEntry> n, V value) {
+        return null;
+    }*/
 
-    protected LinkedNode<CacheEntry> SelectVictim()
+    /*protected LinkedNode<CacheEntry> SelectVictim()
     {
-        return elementList.RemoveFirst();
-    }
+        LinkedNode<CacheEntry> deleted = elementList.RemoveLast();
+        K key = deleted.getElement().key;
+        this.elementTable.remove(key);
+        this.numElem--;
+        return deleted;
+    }*/
 
-    protected void Delete(LinkedNode<CacheEntry> node) {
+    /*protected void Delete(LinkedNode<CacheEntry> node) {
 
-    }
+    }*/
 
     public void clear() {
 
