@@ -7,32 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c01a680f-b3cd-4827-b967-bfad8eb03096" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PruebaMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PruebaRendimiento.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../CacheLibrary/target/TP3-1.0-SNAPSHOT.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../CacheLibrary/target/classes/META-INF/MANIFEST.MF" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../CacheLibrary/target/maven-archiver/pom.properties" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../CacheLibrary/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../CacheLibrary/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../CacheLibrary/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Query.class" afterPath="$PROJECT_DIR$/target/classes/Query.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/QueryCache.class" afterPath="$PROJECT_DIR$/target/classes/QueryCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/QueryNoCache.class" afterPath="$PROJECT_DIR$/target/classes/QueryNoCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Run.class" afterPath="$PROJECT_DIR$/target/classes/Run.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CacheLibrary/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../CacheLibrary/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheMemory.java" afterPath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheMemory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOut.java" afterPath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/FirstInFirstOut.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOut.java" afterPath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LastInFirstOut.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LeastRecentlyUsed.java" afterPath="$PROJECT_DIR$/../CacheLibrary/src/main/java/cr/ac/ucr/ecci/ci1310/cache/algorithm/LeastRecentlyUsed.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLQuery.iml" afterPath="$PROJECT_DIR$/SQLQuery.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Query.java" afterPath="$PROJECT_DIR$/src/main/java/Query.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/QueryCache.java" afterPath="$PROJECT_DIR$/src/main/java/QueryCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/QueryNoCache.java" afterPath="$PROJECT_DIR$/src/main/java/QueryNoCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Run.java" afterPath="$PROJECT_DIR$/src/main/java/Run.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -459,7 +446,7 @@
       <workItem from="1512959143940" duration="20153000" />
       <workItem from="1512982939953" duration="421000" />
       <workItem from="1512983851149" duration="69000" />
-      <workItem from="1513011628412" duration="13951000" />
+      <workItem from="1513011628412" duration="14006000" />
     </task>
     <task id="LOCAL-00001" summary="Objeto tupla. Correción de la profe.">
       <created>1513013460528</created>
@@ -475,11 +462,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513015325322</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Pruebas listas.">
+      <created>1513036755864</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513036755864</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40641000" />
+    <option name="totallyTimeSpent" value="40696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -523,7 +517,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Objeto tupla. Correción de la profe." />
     <MESSAGE value="Cambios interfaz." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios interfaz." />
+    <MESSAGE value="Pruebas listas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pruebas listas." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
